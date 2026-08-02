@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antriksh Gupta | Portfolio</title>
+  <meta name="description" content="Computer Science junior at Catawba College. Full-stack and cloud projects.">
+  <style>
+    :root {
+      --bg: #f5f6f8;
+      --ink: #1a1a1a;
+      --muted: #555;
+      --card: #ffffff;
+      --line: #d8dbe2;
+      --accent: #1f4e79;
+      --accent-soft: #e8eef5;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    header {
+      background: linear-gradient(160deg, #1a2f45 0%, #2c4a6a 100%);
+      color: #fff;
+      padding: 48px 20px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 8px;
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    header .tagline {
+      margin: 0 0 18px;
+      color: #d7e2ef;
+      font-size: 1.05rem;
+    }
+
+    header .meta {
+      margin: 0;
+      color: #b9c9db;
+      font-size: 0.95rem;
+    }
+
+    header .links {
+      margin-top: 16px;
+    }
+
+    header .links a {
+      color: #cfe0f5;
+      margin: 0 10px;
+    }
+
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 28px 18px 48px;
+    }
+
+    section {
+      margin-bottom: 34px;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      margin: 0 0 14px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid var(--accent);
+      color: var(--accent);
+    }
+
+    .about p {
+      margin: 0 0 10px;
+      color: var(--muted);
+    }
+
+    .project {
+      background: var(--card);
+      border: 1px solid var(--line);
+      padding: 16px 18px;
+      margin-bottom: 14px;
+    }
+
+    .project h3 {
+      margin: 0 0 6px;
+      font-size: 1.1rem;
+    }
+
+    .project p {
+      margin: 0 0 8px;
+      color: var(--muted);
+    }
+
+    .tech {
+      font-size: 0.92rem;
+      color: #333;
+      margin-bottom: 10px !important;
+    }
+
+    .project .links a {
+      margin-right: 14px;
+      font-weight: 600;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.9rem;
+    }
+
+    .skills-grid {
+      display: grid;
+      gap: 10px;
+    }
+
+    .skill-row {
+      background: var(--card);
+      border: 1px solid var(--line);
+      padding: 10px 14px;
+    }
+
+    .skill-row strong {
+      color: var(--accent);
+      display: inline-block;
+      min-width: 140px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 18px;
+      background: #1a2f45;
+      color: #c5d2e0;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 640px) {
+      header h1 { font-size: 1.7rem; }
+      .skill-row strong {
+        display: block;
+        margin-bottom: 4px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Antriksh Gupta</h1>
+  <p class="tagline">Computer Science junior</p>
+  <p class="meta">Catawba College · GPA 4.00 · Salisbury, NC</p>
+  <p class="links">
+    <a href="https://github.com/agupta362">GitHub</a>
+    <a href="mailto:antriksh362@gmail.com">Email</a>
+  </p>
+</header>
+
+<main>
+  <section class="about">
+    <h2>About</h2>
+    <p>
+      I am a Computer Science student at Catawba College. I build full-stack web apps,
+      backend APIs, and cloud/DevOps projects. I enjoy learning new technologies and
+      building clean, working applications.
+    </p>
+  </section>
+
+  <section>
+    <h2>Featured projects</h2>
+
+    <div class="project">
+      <h3>Cloud-Native URL Shortener</h3>
+      <p>
+        FastAPI + React URL shortener with JWT auth, Redis caching and rate limiting,
+        SNS/SQS click analytics workers, Docker, Terraform, Kubernetes, and AWS
+        (EC2, RDS, EKS, ECR). Monitoring with Helm, Prometheus, Grafana, and a
+        ServiceMonitor for API metrics.
+      </p>
+      <p class="tech">
+        <strong>Tech:</strong> Python, FastAPI, React, PostgreSQL, Redis, Docker,
+        Kubernetes, Terraform, Helm, Prometheus, Grafana, AWS, GitHub Actions
+      </p>
+      <p class="links">
+        <a href="https://github.com/agupta362/url-shortener">GitHub</a>
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>ClinicSathi</h3>
+      <p>
+        Healthcare SaaS used by 40+ clinics. Contributed React/TypeScript interfaces
+        for appointments, follow-ups, and IRD-ready financial reporting on a
+        multi-tenant Supabase/PostgreSQL platform.
+      </p>
+      <p class="tech"><strong>Tech:</strong> React, TypeScript, Vite, Supabase, PostgreSQL</p>
+      <p class="links">
+        <a href="https://clinicsathi.com">Live site</a>
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>Babal Wears</h3>
+      <p>
+        Vintage streetwear storefront with category, size, and price filtering.
+        Product data and images from Supabase; deployed on Vercel.
+      </p>
+      <p class="tech"><strong>Tech:</strong> React, TypeScript, Tailwind, Supabase, Vercel</p>
+      <p class="links">
+        <a href="https://clothing-store-demo-work.vercel.app">Live site</a>
+        <a href="https://github.com/agupta362/Ecommerce_website-Wears-">GitHub</a>
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>Hawa Khana Restaurant</h3>
+      <p>
+        Multi-page restaurant website with Firebase menu data, contact form, and
+        location pages. Built for Web Dev class.
+      </p>
+      <p class="tech"><strong>Tech:</strong> React, Vite, Firebase, GitHub Pages</p>
+      <p class="links">
+        <a href="https://agupta362.github.io/hawa-khana-restaurant/">Live site</a>
+        <a href="https://github.com/agupta362/hawa-khana-restaurant">GitHub</a>
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>Weather Forecasting and Anomaly Detection</h3>
+      <p>
+        Data science notebook for Isolation Forest anomalies, Random Forest feature
+        importance, Folium maps, and ensemble temperature forecasting.
+      </p>
+      <p class="tech"><strong>Tech:</strong> Python, Pandas, Scikit-Learn, Folium, Jupyter</p>
+      <p class="links">
+        <a href="https://github.com/agupta362/data-science">GitHub</a>
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>Finch GPS Navigator</h3>
+      <p>
+        Autonomous Finch robot navigation with Dijkstra pathfinding, IR line following,
+        and a Java Swing map UI.
+      </p>
+      <p class="tech"><strong>Tech:</strong> Java, Finch Robot, Dijkstra</p>
+      <p class="links">
+        <a href="https://github.com/agupta362/finch-pathnavigating-robot">GitHub</a>
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>Richard Blume Website</h3>
+      <p>Personal/client website deployed on Vercel.</p>
+      <p class="tech"><strong>Tech:</strong> HTML, CSS, Vercel</p>
+      <p class="links">
+        <a href="https://richard-blume.vercel.app">Live site</a>
+        <a href="https://github.com/agupta362/rick-blume-website">GitHub</a>
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-row">
+        <strong>Languages</strong>
+        Python, Java, TypeScript, JavaScript, SQL, C, C++
+      </div>
+      <div class="skill-row">
+        <strong>Backend &amp; Data</strong>
+        FastAPI, REST APIs, JWT, PostgreSQL, Redis, Supabase, SNS, SQS
+      </div>
+      <div class="skill-row">
+        <strong>Cloud &amp; DevOps</strong>
+        AWS (EC2, RDS, EKS, ECR, IAM, SSM), Docker, Kubernetes, Terraform, Helm, GitHub Actions, LocalStack
+      </div>
+      <div class="skill-row">
+        <strong>Monitoring</strong>
+        Prometheus, Grafana, Alertmanager, ServiceMonitor, health probes
+      </div>
+      <div class="skill-row">
+        <strong>Frontend</strong>
+        React, Vite, Tailwind CSS, Firebase
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Antriksh Gupta | MIT-licensed projects on GitHub</p>
+</footer>
+
+</body>
+</html>
